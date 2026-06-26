@@ -1,0 +1,18 @@
+# Week1
+## Day1
+
+### 完成内容
+- 安装 Python
+- 安装 VSCode
+- 安装 Git
+- 安装 uv
+- 创建 GitHub
+- 第一次 Push
+### Git 命令
+git clone
+git add .
+git commit -m
+git push
+git pull
+### 今日总结
+今天完成开发环境配置。
