@@ -82,7 +82,14 @@ Agent 开发         ██████████████             Day 
 - 阅读：[Python 官方文档 - 9. Classes](https://docs.python.org/3/tutorial/classes.html)
 - 只看 9.1-9.3（Name and Objects、Scopes、Class Definition）
 - 必须能回答：什么是对象？什么是实例？self 是什么？为什么需要 class？
-
+1.对象（object）= 数据+方法
+2.类（class）就是对象的模板
+3.实例（instance）就是根据类创建出来的具体对象
+4.self代表当前实例对象本身
+5.将相关的数据和方法组织在一起
+  提高代码复用性
+  让对象结构更加清晰
+  更容易维护和扩展程序
 **💻 实操（90 min）：**
 
 ```
