@@ -33,5 +33,17 @@ s1.info()  # Python 内部实际是 Student.info(s1)
 - **`__pycache__/` 被 git 跟踪**：Python 运行后自动生成的缓存目录不应该提交。解决：创建 `.gitignore` 排除 `__pycache__/` 和 `*.pyc`
 
 ## 今天最深的理解
+if __name__ == "__main__":
+这不是走形式，它有明确作用。
 
-- **self 不是关键字，是约定**。`self` 这个名字可以改成别的（但不应该改），关键是它永远是方法的第一个参数，指向调用这个方法的实例。`s1.info()` 等价于 `Student.info(s1)`。
+当你直接运行这个文件时：python main.py，Python 把 __name__ 设为 "__main__"，所以 main() 执行。
+
+但当别人 import 这个文件时：比如 from main import show_menu，Python 把 __name__ 设为 "main"（文件名），main() 就不会自动跑。
+
+
+git提交流程：
+git status
+git add .
+git status
+git commit -m "docs: 更新 Day01 笔记"
+git push
